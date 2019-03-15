@@ -4,9 +4,10 @@ from image import CropImage
 from watchdog.events import FileSystemEventHandler
 
 
-# To Do: Apply multithreading image processing
+
 
 class Handler(FileSystemEventHandler):
+
 
     @staticmethod
     def on_created(event):
@@ -15,6 +16,7 @@ class Handler(FileSystemEventHandler):
         :param event: Event object from dogwatch
         :return: None
         """
+        print(event)
         path = event.src_path
         if path.endswith(".jpg"):
             try:

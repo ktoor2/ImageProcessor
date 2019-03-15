@@ -1,4 +1,10 @@
 {
   "input_dir" : "data/raw_images",
-  "output_dir": "data/processed_images"
+  "output_dir": "data/processed_images",
+  "locations_file": "visualize/condinates.txt",
+  "processed_dir": "data/processed_images",
+  "image_size": {
+      "height": 224,
+      "width": 224
+  }
 }
